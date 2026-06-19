@@ -6,8 +6,16 @@
         // PHP code is written here
           $name = "Niharika";
           $age = 21;
-          echo "<font colour = red size=5>Name : </font>", $name ;
-          echo "Age : $age ";
+          echo "<font color=red size=5> Name : </font>", "<font color=blue size=5> $name </font>" ;
+          echo "<br>";
+          echo "<font color=red size=5> Age : </font>", "<font color = blue size = 5> $age </font>" ;
+          echo "<br>";
+
+          $a = 500;
+          $b = 300;
+          $c = $a+$b;
+          echo "$a + $b = ", $a+$b;
+          echo "<br>Addition of $a and $b is $c";
 
         /*
         Rules for variables
