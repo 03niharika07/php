@@ -3,7 +3,7 @@
     <body>
         <center>
         <?php
-        // String is immutable
+        // String is immutable, so we need to create new string for changes
 
         // 1. strlen()
         $str = "My Name Is Niharika";
