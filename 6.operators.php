@@ -134,6 +134,38 @@
 
             echo "<br>";
 
+
+            // UNARY OPERATORS - INCREMENT/DECREMENT
+            // ++ (PRE/POST), -- (PRE/POST)
+            $var = 10;
+
+            $var ++;
+            echo $var;  // return 11
+            echo "<br>";
+            ++ $var;    // return 12
+            echo $var;
+            echo "<br>";
+            echo "<br>";
+
+            $v1 = 10;
+            $v2 = ++$v1;   // returns 11
+            $v3 = $v1++;   // now v1 becomes 11, phle assign hoga v3 = 11, ab v1 bdh gya to 12
+            echo $v2;
+            echo "<br>";
+            echo $v3;
+            echo "<br>";
+            echo $v1;
+            echo "<br>";
+            echo "<br>";
+
+            $z = 10;
+            $y = ++$z + $z++;  // 11 + 11
+            echo "z=",$z;
+            echo "<br>";
+            echo "y=",$y;
+            echo "<br>";
+        
+
             ?>
         </center>
     </body>
