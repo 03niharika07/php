@@ -163,9 +163,7 @@
             echo "z=",$z;
             echo "<br>";
             echo "y=",$y;
-            echo "<br>";
-        
-
+            echo "<br>";   
             ?>
         </center>
     </body>
