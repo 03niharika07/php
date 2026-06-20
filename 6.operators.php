@@ -133,6 +133,7 @@
             }
 
             echo "<br>";
+            echo "<br>";
 
 
             // UNARY OPERATORS - INCREMENT/DECREMENT
@@ -164,6 +165,84 @@
             echo "<br>";
             echo "y=",$y;
             echo "<br>";   
+
+            $v=20;
+            if(++$a > 20){   // phle increment fir condition check hogi
+                echo "Hi";
+            } else {
+                echo "by";
+            }
+
+            echo "<br>";
+            echo "<br>";
+
+            $a1 = 20;
+            $a2 = 10;
+
+            if(++$a1>25 && ++$a2>5){   // short circuit operator - jaha pr false mila vhi stop hojaega
+                echo "Hi";
+            } else{
+                echo "Bye";
+            }
+            echo "<br>";
+            echo "a1=",$a1;   // 21
+            echo "<br>";
+            echo "a2=",$a2;   // 10
+            echo "<br>";
+
+            // a2 ki value islie update nhi hui kyuki jb first condition check hui toh voh false aai
+            // ab and ko first false mil gyi toh usne aage ki check hi nhi krri
+            // bcoz and m agr dono true hote tbhi true aati
+            // islie voh second condition bina check krre hi aage bdh gya 
+
+            if(++$a1>25 || ++$a2>5){   // ye bhi short circuit hai
+                echo "Hi";             // agr isse phli true mil jati toh next condition check nhi krta
+            } else{
+                echo "Bye";
+            }
+            echo "<br>";
+            echo "a1=",$a1;   // 21
+            echo "<br>";
+            echo "a2=",$a2;   // 11
+            echo "<br>";
+            if(++$a1>25 && ++$a2>5){   // short circuit operator - jaha pr false mila vhi stop hojaega
+                echo "Hi";
+            } else{
+                echo "Bye";
+            }
+            echo "<br>";
+            echo "a1=",$a1;   // 21
+            echo "<br>";
+            echo "a2=",$a2;   // 10
+            echo "<br>";
+            if(++$a1>25 && ++$a2>5){   // short circuit operator - jaha pr false mila vhi stop hojaega
+                echo "Hi";
+            } else{
+                echo "Bye";
+            }
+            echo "<br>";
+            echo "a1=",$a1;   // 21
+            echo "<br>";
+            echo "a2=",$a2;   // 10
+            echo "<br>";
+            echo "<br>";
+
+            // and (&&) and or (||) are short circuit operators
+
+
+            // TERNARY OPERATORS - CONDITIONAL OPERATOR
+            // syntax -  condition ? value_if_true : value_if_false
+
+            $b1 = 50;
+            $b2 = 30;
+            $ans = $b1>$b2 ? "hello" : "biee";
+            echo "ans=",$ans;
+            echo "<br>";
+
+            $ans2 = 700 ? "Hello" : "Biee";
+            echo "ans2=",$ans2;   // 700 is true , value ko true consider krte
+            echo "<br>";
+
             ?>
         </center>
     </body>
