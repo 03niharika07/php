@@ -243,6 +243,36 @@
             echo "ans2=",$ans2;   // 700 is true , value ko true consider krte
             echo "<br>";
 
+            $c1 = 50;
+            $c2 = 50;
+            $c3 = 50;
+            $ans3 = ($c1==$c2)==$c3 ? "hello" : "biee";
+            echo "ans3=",$ans3;
+            echo "<br>";
+
+            // even or odd
+            $n = 20;
+            $s = ($n%2 == 0) ? "Even" : "Odd";
+            echo $s;
+            echo "<br>";
+
+            // greater between 3 no.s
+            $n1 = 10;
+            $n2 = 20;
+            $n3 = 30;
+
+            $ans4 = ($n1>$n2 && $n1>$n3) ? $n1 : (($n2>$n1 && $n2>$n3) ? $n2 : $n3);
+            echo "Greatest number : " , $ans4;
+            echo "<br>";
+
+            // check vowel
+            $q = 'a';
+            $q = strtolower($q);
+
+            $ans5 = ($q=='a' || $q=='e' || $q=='i' || $q=='o' || $q=='u') ? "Vowel" : "Character";
+            echo $ans5;
+            echo "<br>";
+            
             ?>
         </center>
     </body>
