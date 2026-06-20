@@ -65,3 +65,8 @@
         </center>
     </body>
 </html>
+
+<!-- DATA TYPES
+1. Scalar -> Float, String, Integer, Bool
+2. Compound -> Array, Objects
+3. Special -> NULL, Resource -->
