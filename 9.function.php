@@ -100,7 +100,7 @@
         $n1 = 10;
         $n2 = 20;
         swap1($n1, $n2);
-        echo $n1." ".$n2,"<br>";
+        echo $n1." ".$n2,"<br>";    // returns 10 20 , because pass by value
 
         function swap2(&$a, &$b){
             $c = $a;
@@ -111,13 +111,7 @@
         $n1 = 10;
         $n2 = 20;
         swap2($n1, $n2);
-        echo $n1." ".$n2,"<br>";
-
-
-        
-
-
-
+        echo $n1." ".$n2,"<br>";   // returns 20 10, because pass by reference
 
         ?>
     </center>
